@@ -1,31 +1,34 @@
 @inherits LayoutComponentBase
 
 <header class="container mx-auto px-2 py-2">
-  <div class="hidden sm:flex space-x-1 place-items-center">
-    <span>@ThisAssembly.AssemblyTitle @ThisAssembly.AssemblyFileVersion</span>
-    <div class="flex-1"></div>
-    <button class="bg-gray-200 px-4 py-2">track</button>
-    <button class="bg-gray-200 px-4 py-2">log</button>
-    <LoginDisplay />
-  </div>
+    <div class="hidden sm:flex space-x-1 place-items-center">
+        <span>@ThisAssembly.AssemblyTitle @ThisAssembly.AssemblyFileVersion</span>
 
-  <div class="flex sm:hidden space-x-1 place-items-center relative">
-    <span>Timingstracker</span>
-    <div class="flex-1"></div>
-    <input type="checkbox" id="header-menu-item" class="hidden absolute" />
-    <label for="header-menu-item" class="flex items-center space-x-1 bg-gray-200 px-4 py-2">
-      <span>Menu</span>
-      <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-      </svg>
-    </label>
+        <div class="flex-1"></div>
 
-    <div id="header-menu" class="hidden absolute right-1 top-full flex-col space-y-1 bg-gray-200 mt-2 p-1 rounded-md">
-        <button class="px-4 py-2">track</button>
-        <button class="px-4 py-2">log</button>
+        <button class="bg-gray-200 px-4 py-2">track</button>
+        <button class="bg-gray-200 px-4 py-2">log</button>
         <LoginDisplay />
     </div>
-  </div>
+
+    <div class="flex sm:hidden space-x-1 place-items-center relative">
+        <span>Timingstracker</span>
+
+        <div class="flex-1"></div>
+
+        <input type="checkbox" id="header-menu-item" class="hidden absolute" />
+        <label for="header-menu-item" class="flex items-center space-x-1 bg-gray-200 px-4 py-2">
+            <span>Menu</span>
+            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </label>
+        <div id="header-menu" class="hidden absolute right-1 top-full flex-col space-y-1 bg-gray-200 mt-2 p-1 rounded-md">
+            <button class="px-4 py-2">track</button>
+            <button class="px-4 py-2">log</button>
+            <LoginDisplay />
+        </div>
+    </div>
 </header>
 
 
